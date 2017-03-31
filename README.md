@@ -27,6 +27,19 @@ Once successfully installed, you can try to execute a simple task:
 
 and you will see, among others, ``Hello world!`` printed in your terminal.
 
+## Use with Docker
+Docker allow the pythia-core framework to run on MacOS or Windows installation.
+It requires docker-compose to also be present (it's shipped by default for OS X and Windows and needs to be downloaded for Linux)
+Start by cloning the git repository and build the docker image:
+
+    > git clone --recursive https://github.com/pythia-project/pythia-core.git
+    > cd pythia-core
+    > docker-compose --verbose build
+    
+Once the image is successfully built, you can now start the image:
+
+    > docker-compose up 
+
 ## Contributors
 
 - Sébastien Combéfis
