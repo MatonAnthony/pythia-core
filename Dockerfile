@@ -6,11 +6,8 @@ MAINTAINER Virginie Van den Schrieck, virginie.vandenschrieck@pythia-project.org
 RUN cat /etc/resolv.conf
 RUN apt-get update  \
 		&& apt-get install -y gcc libc6-dev make curl wget xz-utils\
-<<<<<<< HEAD
 			--no-install-recommends \
-=======
                ca-certificates bzip2 --no-install-recommends strace \
->>>>>>> d8d2f8f... Separate each component in a separate container
 		&& rm -rf /var/lib/apt/lists/*
 
 
